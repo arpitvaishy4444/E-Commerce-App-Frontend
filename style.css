@@ -1,0 +1,200 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    
+    height: 4vmax;
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.372);
+    background-color: white;
+    position:sticky;
+    top: 0%;
+    z-index: 10000;
+}
+.left{
+
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.left>a{
+    color: rgb(160, 17, 17);
+    font-size: 2vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.center{
+width: 60%;
+display: flex;
+}
+.center>a{
+    text-decoration: none;
+    font-size: 1.7vmax;
+    width: 100%;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+.center>a:hover{
+    border-bottom: 2px solid rgb(160, 17, 17);   
+}
+.right{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+.right>img+img{
+    width: 3vmax;
+}
+.right>img+img{
+    width: 4.4vmax;
+    height: 3vmax;
+}
+/* ------------- */
+#section1{
+    display: flex;
+    background-image: linear-gradient(to right , rgb(201, 208, 220) ,rgb(255, 255, 255));
+    height: 90vh;
+    width: 100vw;
+}
+.leftbox{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+}
+.leftbox:hover{
+    transform: translateY(20px);
+}
+.leftbox>h1{
+    color: black;
+    font-size: 4vmax;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 3vmax;
+    margin-top: 13vmax;
+    margin-bottom: 0vmax;
+}
+.leftbox>h2{
+    color: black;
+    font-size: 1.5vmax;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: -1vmax;
+    margin-left: 3vmax;
+}
+.leftbox>p{
+    margin-left: 4vmax;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.leftbox>button{
+    width: 8vmax;
+    height: 2vmax;
+    border: none;
+    background-color: rgb(160, 17, 17);
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 4.5vmax;
+    transition: 0.3s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.leftbox>button:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+}
+.rightbox{
+    width: 100vw;
+    height: 100vh;
+}
+.rightbox > img{
+height: 80vh;
+margin: 20px;
+margin-left: 20px;
+filter: drop-shadow(0 0 10px rgb(130, 39, 39));
+transition: all 1s;
+}
+.rightbox>img:hover{
+    transform: translate(-30px,30px);
+}
+#section2{
+    height: 25vh;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    transition: all 0.5s;
+}
+#section2>h1{
+    font-size: 4vmax;
+    height: 4.2vmax;
+    width: 30vmax;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid rgb(160, 17, 17);
+}
+#section2:hover{
+    transform: translateY(20px);
+}
+#section3{
+width: 80%;
+height: 140vh;
+margin: auto;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+justify-content: center;
+}
+#section3>div{
+    border: 2px solid black;
+    height: 62vh;
+    width: 40vh;
+    margin: 3vh;
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  transition: all 1s;
+  filter: drop-shadow(0 0 10px rgb(133, 22, 22));
+}
+
+#section3>div>img{
+    height: 50vh;
+    width: 40vh;
+}
+.ptag{
+    margin: 0vmax;
+}
+#section3>div:hover{
+    /* transform: translateY(-20px); */
+    transform: scale(1.1);
+    /* transform: rotateZ(360deg); */
+}
+
+
+
+#productheading{
+    /* animation-name: animationpart;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+    /* animation-direction: alternate; */
+    animation: animationpart 2s linear 0s infinite alternate;
+
+}
+@keyframes animationpart{
+    from{
+        transform: scale(1); 
+         
+    }
+    to{
+        transform: scale(1.6);
+        color: rgb(185, 114, 114); 
+        
+    }
+}
